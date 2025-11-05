@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthSpecialist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <div class="nav-wrapper">
+        <nav class="navbar">
+            <div class="logo">
+                <div class="logo-icon">
+                    <span class="logo-dot"></span>
+                    <span class="logo-dot"></span>
+                    <span class="logo-dot"></span>
+                    <span class="logo-dot"></span>
+                </div>
+                <span><span class="logo-text-health">Health</span><span class="logo-text-specialist">Specialist</span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li style="position: relative;">
+                    <a onclick="toggleDoctorsMenu()">DOCTORS</a>
+                    <div class="doctors-dropdown" id="doctorsDropdown">
+                        <div class="doctor-item">Phillis K Vance MD</div>
+                        <div class="doctor-item">Stanley K Hudson MD</div>
+                        <div class="doctor-item">Kevin D Malone MD</div>
+                        <div class="doctor-item">Angela S Martin MD</div>
+                    </div>
+                </li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <button class="btn-login">LOG IN</button>
+                <button class="btn-signup">SIGN UP</button>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Hero -->
+    <div class="container">
+        <section class="hero">
+            <div>
+                <h1>Dedicated Health Care Specialists</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempore incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqua ex.</p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <button class="btn-primary">LEARN MORE</button>
+            </div>
+            <div>
+                <img class="hero-img" src="/Users/cem/Desktop/webdesign/pictures/ambulance.png" alt="Medical">
+            </div>
+        </section>
+
+        <!-- Info Cards -->
+        <section class="info-section">
+            <div class="info-card">
+                <h3>EMERGENCIES</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <button class="btn-primary">MORE INFO</button>
+            </div>
+            <div class="info-card">
+                <h3>OPERATING HOURS</h3>
+                <div class="hours-table">
+                    <div class="hours-row">
+                        <span class="hours-day">MONDAY - FRIDAY</span>
+                        <span class="hours-time">08:00-18:00</span>
+                    </div>
+                    <div class="hours-row">
+                        <span class="hours-day">SATURDAY</span>
+                        <span class="hours-time">10:00-16:00</span>
+                    </div>
+                    <div class="hours-row">
+                        <span class="hours-day">SUNDAY</span>
+                        <span class="hours-time">10:00-14:00</span>
+                    </div>
+                </div>
+                <button class="btn-primary">MAKE AN APPOINTMENT</button>
+            </div>
+            <div class="info-card">
+                <h3>TEST RESULTS</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <button class="btn-primary">CHECK TEST</button>
+            </div>
+        </section>
+
+        <!-- Doctors -->
+        <section class="doctors-section">
+            <h2>Doctors</h2>
+            <div class="doctors-list">
+                <div class="doctor-card">
+                    <div class="doctor-avatar">
+                        <img src="/Users/cem/Desktop/webdesign/pictures/doctor1.png" alt="Family Medicine">
+                    </div>
+                    <div class="doctor-details">
+                        <div class="doctor-name">Phillis K Vance MD</div>
+                        <div class="doctor-tag">Family Medicine</div>
+                    </div>
+                </div>
+                <div class="doctor-card">
+                    <div class="doctor-avatar">
+                        <img src="/Users/cem/Desktop/webdesign/pictures/doctor2.png" alt="Internal Medicine">
+                    </div>
+                    <div class="doctor-details">
+                        <div class="doctor-name">Stanley K Hudson MD</div>
+                        <div class="doctor-tag">Internal Medicine</div>
+                    </div>
+                </div>
+                <div class="doctor-card">
+                    <div class="doctor-avatar">
+                        <img src="/Users/cem/Desktop/webdesign/pictures/doctor3.png" alt="Cardiology">
+                    </div>
+                    <div class="doctor-details">
+                        <div class="doctor-name">Kevin D Malone MD</div>
+                        <div class="doctor-tag">Cardiology</div>
+                    </div>
+                </div>
+                <div class="doctor-card">
+                    <div class="doctor-avatar">
+                        <img src="/Users/cem/Desktop/webdesign/pictures/doctor4.png" alt="Physical Therapy">
+                    </div>
+                    <div class="doctor-details">
+                        <div class="doctor-name">Angela S Martin MD</div>
+                        <div class="doctor-tag">Physical Therapy</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-logo">
+                        <div class="footer-logo-icon">
+                            <span class="footer-logo-dot"></span>
+                            <span class="footer-logo-dot"></span>
+                            <span class="footer-logo-dot"></span>
+                            <span class="footer-logo-dot"></span>
+                        </div>
+                        <span><span class="logo-text-health">Health</span><span class="logo-text-specialist">Specialist</span></span>
+                    </div>
+                </div>
+                <div>
+                    <div class="footer-title">SERVICES</div>
+                    <ul class="footer-list">
+                        <li><a href="#">Family Medicine</a></li>
+                        <li><a href="#">International Medicine</a></li>
+                        <li><a href="#">Cardiology</a></li>
+                        <li><a href="#">Physical Therapy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="footer-title">DOCTORS</div>
+                    <ul class="footer-list">
+                        <li><a href="#">Phillis K Vance MD</a></li>
+                        <li><a href="#">Stanley K Hud</a></li>
+                        <li><a href="#">Kevin D Malone MD</a></li>
+                        <li><a href="#">Angela S Martin MD</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="footer-title">CONTACT</div>
+                    <a href="tel:+14041234567" class="footer-phone">
+                        <span class="phone-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                        </span>
+                        (404)123 - 4567
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">1440 X 1040</div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleDoctorsMenu() {
+            document.getElementById('doctorsDropdown').classList.toggle('active');
+        }
+
+        document.addEventListener('click', function(e) {
+            const dropdown = document.getElementById('doctorsDropdown');
+            if (!dropdown.contains(e.target) && !e.target.closest('.nav-menu')) {
+                dropdown.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
