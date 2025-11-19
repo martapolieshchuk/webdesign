@@ -1,150 +1,217 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HealthSpecialist</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="about.css">
-</head>
-<body>
-    <!-- Navigation -->
-    <div class="nav-wrapper">
-        <nav class="navbar">
-            <div class="logo">
-                <div class="logo-icon">
-                    <span class="logo-dot"></span>
-                    <span class="logo-dot"></span>
-                    <span class="logo-dot"></span>
-                    <span class="logo-dot"></span>
-                </div>
-                <span><span class="logo-text-health">Health</span><span class="logo-text-specialist">Specialist</span></span>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">SERVICES</a></li>
-                <li style="position: relative;">
-                    <a onclick="toggleDoctorsMenu()">DOCTORS</a>
-                    <div class="doctors-dropdown" id="doctorsDropdown">
-                        <div class="doctor-item">Phillis K Vance MD</div>
-                        <div class="doctor-item">Stanley K Hudson MD</div>
-                        <div class="doctor-item">Kevin D Malone MD</div>
-                        <div class="doctor-item">Angela S Martin MD</div>
-                    </div>
-                </li>
-                <li><a href="#">CONTACT</a></li>
-            </ul>
-            <div class="nav-buttons">
-                <button class="btn-login">LOG IN</button>
-                <button class="btn-signup">SIGN UP</button>
-            </div>
-        </nav>
-    </div>
-<section class="about-section">
-  <div class="about-container">
-    <div class="about-text">
-      <h2>About</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <title>About | HealthSpecialist</title>
 
-      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
+    <script src="https://cdn.tailwindcss.com"></script>
 
-    <div class="about-image">
-      <img src="./pictures/hospital.png" alt="Hospital Building">
-    </div>
-  </div>
-</section>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
-<section class="services-section">
-  <button class="services-title">Services</button>
-
-  <div class="services-wrapper">
-    <!-- Card 1 -->
-    <div class="service-card">
-      <img src="./pictures/picture1.png" alt="Family Medicine">
-      <h3>Family Medicine</h3>
-    </div>
-
-    <!-- Card 2 -->
-    <div class="service-card">
-      <img src="./pictures/picture2.png" alt="Cardiology Services">
-      <h3>Cardiology Services</h3>
-    </div>
-
-    <!-- Card 3 -->
-    <div class="service-card">
-      <img src="./pictures/picture3.png" alt="Physical Therapy">
-      <h3>Physical Therapy</h3>
-    </div>
-
-    <!-- Card 4 -->
-    <div class="service-card">
-      <img src="./pictures/picture4.png" alt="Internal Medicine">
-      <h3>Internal Medicine</h3>
-    </div>
-  </div>
-</section>
- <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div>
-                    <div class="footer-logo">
-                        <div class="footer-logo-icon">
-                            <span class="footer-logo-dot"></span>
-                            <span class="footer-logo-dot"></span>
-                            <span class="footer-logo-dot"></span>
-                            <span class="footer-logo-dot"></span>
-                        </div>
-                        <span><span class="logo-text-health">Health</span><span class="logo-text-specialist">Specialist</span></span>
-                    </div>
-                </div>
-                <div>
-                    <div class="footer-title">SERVICES</div>
-                    <ul class="footer-list">
-                        <li><a href="#">Family Medicine</a></li>
-                        <li><a href="#">International Medicine</a></li>
-                        <li><a href="#">Cardiology</a></li>
-                        <li><a href="#">Physical Therapy</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <div class="footer-title">DOCTORS</div>
-                    <ul class="footer-list">
-                        <li><a href="#">Phillis K Vance MD</a></li>
-                        <li><a href="#">Stanley K Hud</a></li>
-                        <li><a href="#">Kevin D Malone MD</a></li>
-                        <li><a href="#">Angela S Martin MD</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <div class="footer-title">CONTACT</div>
-                    <a href="tel:+14041234567" class="footer-phone">
-                        <span class="phone-icon">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-                            </svg>
-                        </span>
-                        (404)123 - 4567
-                    </a>
-                </div>
-            </div>
-            <div class="footer-bottom">1440 X 1040</div>
-        </div>
-    </footer>
-<script>
-        function toggleDoctorsMenu() {
-            document.getElementById('doctorsDropdown').classList.toggle('active');
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Montserrat', 'sans-serif'],
+            },
+          }
         }
+      }
+    </script>
+    
+    <style>
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="font-sans text-gray-700 bg-white">
 
+    <div class="w-full bg-gradient-to-r from-blue-500 to-blue-600 shadow-lg sticky top-0 z-50">
+      <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4">
+        
+        <a href="index.html" class="flex items-center gap-2.5">
+          <div class="relative w-[28px] h-[28px]">
+            <span class="absolute top-0 left-1/2 -translate-x-1/2 w-[9px] h-[9px] bg-white rounded-full"></span>
+            <span class="absolute left-0 top-1/2 -translate-y-1/2 w-[9px] h-[9px] bg-white rounded-full"></span>
+            <span class="absolute right-0 top-1/2 -translate-y-1/2 w-[9px] h-[9px] bg-white rounded-full"></span>
+            <span class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[9px] h-[9px] bg-white rounded-full"></span>
+          </div>
+          <span class="text-lg text-white font-semibold">
+            <span class="font-bold">Health</span><span class="font-normal">Specialist</span>
+          </span>
+        </a>
+
+        <ul class="hidden md:flex items-center gap-8 text-xs font-bold uppercase tracking-wide text-white">
+          <li><a href="about.html" class="hover:opacity-80">ABOUT</a></li>
+          <li><a href="about.html#services" class="hover:opacity-80">SERVICES</a></li>
+          
+          <li class="relative">
+            <a href="#" id="doctors-toggle" class="hover:opacity-80">DOCTORS</a>
+            <div id="doctorsDropdown" class="hidden absolute z-10 top-full left-1/2 -translate-x-1/2 mt-2 w-48 bg-blue-500 rounded-lg shadow-xl py-2">
+              <a href="#" class="block px-4 py-2 text-white text-xs font-semibold hover:bg-white hover:text-blue-500">Phillis K Vance MD</a>
+              <a href="#" class="block px-4 py-2 text-white text-xs font-semibold hover:bg-white hover:text-blue-500">Stanley K Hudson MD</a>
+              <a href="#" class="block px-4 py-2 text-white text-xs font-semibold hover:bg-white hover:text-blue-500">Kevin D Malone MD</a>
+              <a href="#" class="block px-4 py-2 text-white text-xs font-semibold hover:bg-white hover:text-blue-500">Angela S Martin MD</a>
+            </div>
+          </li>
+          <li><a href="#" class="hover:opacity-80">CONTACT</a></li>
+        </ul>
+
+        <div class="hidden md:flex items-center gap-4">
+          <button class="bg-transparent text-white text-xs font-bold uppercase tracking-wide px-4 py-2">LOG IN</button>
+          <button class="bg-white text-blue-500 px-6 py-2.5 rounded-md text-xs font-bold uppercase tracking-wide hover:bg-gray-100">SIGN UP</button>
+        </div>
+
+        <div class="md:hidden">
+          <button id="mobile-menu-button" class="text-white">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+          </button>
+        </div>
+      </nav>
+
+      <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+        <ul class="flex flex-col py-4">
+          <li><a href="about.html" class="block px-6 py-3 text-sm font-semibold text-gray-700 hover:bg-blue-50">ABOUT</a></li>
+          <li><a href="about.html#services" class="block px-6 py-3 text-sm font-semibold text-gray-700 hover:bg-blue-50">SERVICES</a></li>
+          <li><a href="#" class="block px-6 py-3 text-sm font-semibold text-gray-700 hover:bg-blue-50">DOCTORS</a></li>
+          <li><a href="#" class="block px-6 py-3 text-sm font-semibold text-gray-700 hover:bg-blue-50">CONTACT</a></li>
+        </ul>
+        <div class="flex flex-col gap-3 p-4 border-t border-gray-100">
+          <button class="w-full bg-blue-500 text-white px-6 py-2.5 rounded-md text-xs font-bold uppercase tracking-wide hover:bg-blue-600">SIGN UP</button>
+          <button class="w-full bg-gray-100 text-gray-700 px-6 py-2.5 rounded-md text-xs font-bold uppercase tracking-wide">LOG IN</button>
+        </div>
+      </div>
+    </div>
+    
+    <section class="py-16 md:py-24">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
+        
+        <div>
+          <h2 class="text-[36px] font-bold text-[#1f1f1f] mb-[25px]">About</h2>
+          <div class="space-y-4">
+            <p class="text-[15px] text-[#4b4b4b] leading-[1.6]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p class="text-[15px] text-[#4b4b4b] leading-[1.6]">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+
+        <div>
+          <img src="/Users/cem/Desktop/webdesign-2/pictures/hospital.png" alt="Hospital Building" class="w-full md:max-w-md h-auto mx-auto rounded-lg shadow-lg">
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="py-16 md:py-20 text-center bg-white pt-10">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <button class="bg-blue-500 text-white px-6 py-2.5 rounded-full text-base font-semibold mb-12 cursor-default">
+          Services
+        </button>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+          
+          <div class="bg-white border-2 border-blue-500 p-10 rounded-xl text-center cursor-pointer transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl">
+            <img src="/Users/cem/Desktop/webdesign-2/pictures/picture1.png" alt="Family Medicine" class="w-[70px] h-auto mx-auto mb-4">
+            <h3 class="text-lg font-bold text-black">Family Medicine</h3>
+          </div>
+
+          <div class="bg-white border-2 border-blue-500 p-10 rounded-xl text-center cursor-pointer transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl">
+            <img src="/Users/cem/Desktop/webdesign-2/pictures/picture2.png" alt="Cardiology Services" class="w-[70px] h-auto mx-auto mb-4">
+            <h3 class="text-lg font-bold text-black">Cardiology Services</h3>
+          </div>
+
+          <div class="bg-white border-2 border-blue-500 p-10 rounded-xl text-center cursor-pointer transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl">
+            <img src="/Users/cem/Desktop/webdesign-2/pictures/picture3.png" alt="Physical Therapy" class="w-[70px] h-auto mx-auto mb-4">
+            <h3 class="text-lg font-bold text-black">Physical Therapy</h3>
+          </div>
+
+          <div class="bg-white border-2 border-blue-500 p-10 rounded-xl text-center cursor-pointer transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl">
+            <img src="/Users/cem/Desktop/webdesign-2/pictures/picture4.png" alt="Internal Medicine" class="w-[70px] h-auto mx-auto mb-4">
+            <h3 class="text-lg font-bold text-black">Internal Medicine</h3>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-blue-50 py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
+          
+          <div class="lg:col-span-1">
+            <div class="flex items-center gap-2">
+              <div class="relative w-[22px] h-[22px]">
+                <span class="absolute top-0 left-1/2 -translate-x-1/2 w-[8px] h-[8px] bg-blue-500 rounded-full"></span>
+                <span class="absolute left-0 top-1/2 -translate-y-1/2 w-[8px] h-[8px] bg-blue-500 rounded-full"></span>
+                <span class="absolute right-0 top-1/2 -translate-y-1/2 w-[8px] h-[8px] bg-blue-500 rounded-full"></span>
+                <span class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[8px] h-[8px] bg-blue-500 rounded-full"></span>
+              </div>
+              <span class="text-base text-blue-500 font-semibold">
+                <span class="font-bold">Health</span><span class="font-normal">Specialist</span>
+              </span>
+            </div>
+          </div>
+
+          <div>
+            <div class="text-xs font-bold text-gray-800 uppercase tracking-wider mb-5">SERVICES</div>
+            <ul class="space-y-2.5">
+              <li><a href="#" class="text-sm text-gray-600 hover:text-gray-900">Family Medicine</a></li>
+              <li><a href="#" class="text-sm text-gray-600 hover:text-gray-900">International Medicine</a></li>
+              <li><a href="#" class="text-sm text-gray-600 hover:text-gray-900">Cardiology</a></li>
+              <li><a href="#" class="text-sm text-gray-600 hover:text-gray-900">Physical Therapy</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="text-xs font-bold text-gray-800 uppercase tracking-wider mb-5">DOCTORS</div>
+            <ul class="space-y-2.5">
+              <li><a href="#" class="text-sm text-gray-600 hover:text-gray-900">Phillis K Vance MD</a></li>
+              <li><a href="#" class="text-sm text-gray-600 hover:text-gray-900">Stanley K Hud</a></li>
+              <li><a href="#" class="text-sm text-gray-600 hover:text-gray-900">Kevin D Malone MD</a></li>
+              <li><a href="#" class="text-sm text-gray-600 hover:text-gray-900">Angela S Martin MD</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="text-xs font-bold text-gray-800 uppercase tracking-wider mb-5">CONTACT</div>
+            <a href="tel:+14041234567" class="inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white px-6 py-3.5 rounded-md text-sm font-bold">
+              <span class="w-4 h-4">
+                <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+              </span>
+              (404)123 - 4567
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const doctorsToggle = document.getElementById('doctors-toggle');
+        const doctorsDropdown = document.getElementById('doctorsDropdown');
+
+        if (mobileMenuButton) {
+            mobileMenuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+        if (doctorsToggle) {
+            doctorsToggle.addEventListener('click', function(e) {
+                e.preventDefault(); 
+                doctorsDropdown.classList.toggle('hidden');
+            });
+        }
         document.addEventListener('click', function(e) {
-            const dropdown = document.getElementById('doctorsDropdown');
-            if (!dropdown.contains(e.target) && !e.target.closest('.nav-menu')) {
-                dropdown.classList.remove('active');
+            if (doctorsToggle && !doctorsToggle.contains(e.target) && doctorsDropdown && !doctorsDropdown.contains(e.target)) {
+                doctorsDropdown.classList.add('hidden');
             }
         });
     </script>
-    </body>
+</body>
 </html>
